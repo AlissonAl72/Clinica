@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <div class="card" style="max-width: 500px; margin: 3rem auto;">
+        <h2>Registar Novo Utilizador</h2>
+        <form method="post" style="box-shadow: none; padding: 0; margin-top: 1.5rem;">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div style="margin-top: 2rem;">
+                <button type="submit" class="btn btn-primary">Registar</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

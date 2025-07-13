@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <div class="page-header">
+        <h1>Médicos</h1>
+        <a href="{% url 'medico_create' %}" class="btn btn-primary">Adicionar Novo Médico</a>
+    </div>
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CRM</th>
+                    <th>Especialidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in object_list %}
+                <tr>
+                    <td>{{ object.nome_completo }}</td>
+                    <td>{{ object.crm }}</td>
+                    <td>{{ object.especialidade }}</td>
+                    <td class="actions">
+                        <a href="{% url 'medico_update' object.pk %}">Editar</a>
+                        <a href="{% url 'medico_delete' object.pk %}" style="color: var(--danger-color);">Apagar</a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4">Nenhum médico registado.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

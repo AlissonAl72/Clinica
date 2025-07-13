@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <div class="page-header">
+        <h1>Consultas</h1>
+        <a href="{% url 'consulta_create' %}" class="btn btn-primary">Agendar Nova Consulta</a>
+    </div>
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Médico</th>
+                    <th>Data e Hora</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in object_list %}
+                <tr>
+                    <td>{{ object.paciente }}</td>
+                    <td>{{ object.medico }}</td>
+                    <td>{{ object.data_hora|date:"d/m/Y H:i" }}</td>
+                    <td>{{ object.get_status_display }}</td>
+                    <td class="actions">
+                        <a href="{% url 'consulta_update' object.pk %}">Editar</a>
+                        <a href="{% url 'consulta_delete' object.pk %}" style="color: var(--danger-color);">Apagar</a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5">Nenhuma consulta registada.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

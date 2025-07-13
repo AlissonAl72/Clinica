@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <div class="page-header">
+        <h1>Convénios</h1>
+        <a href="{% url 'convenio_create' %}" class="btn btn-primary">Adicionar Novo Convénio</a>
+    </div>
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Código ANS</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in object_list %}
+                <tr>
+                    <td>{{ object.nome }}</td>
+                    <td>{{ object.codigo_ans }}</td>
+                    <td class="actions">
+                        <a href="{% url 'convenio_update' object.pk %}">Editar</a>
+                        <a href="{% url 'convenio_delete' object.pk %}" style="color: var(--danger-color);">Apagar</a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="3">Nenhum convénio registado.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

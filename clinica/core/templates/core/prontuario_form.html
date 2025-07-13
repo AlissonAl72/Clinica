@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <h1>Editar Prontuário de {{ object.paciente.nome_completo }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Salvar</button>
+        <a href="{% url 'paciente_detail' object.pk %}" style="margin-left: 1rem;">Cancelar</a>
+    </form>
+{% endblock %}

@@ -1,48 +1,73 @@
-from django.shortcuts import render
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import *
+from .forms import *
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views.generic import CreateView
 
-# Create your views here.
+class HomeView(LoginRequiredMixin, ListView):
+    model = Consulta
+    template_name = 'core/home.html'
+    context_object_name = 'consultas'
+    ordering = ['-data_hora']
 
-# core/views.py
-from django.http import JsonResponse, HttpRequest
-from django.views.decorators.http import require_http_methods
-import json
-from datetime import datetime
+# CORREÇÃO: As views base agora adicionam o 'verbose_name' ao contexto
+# para que possa ser usado de forma segura nos templates.
+class BaseCreateView(LoginRequiredMixin, CreateView):
+    template_name = 'core/generic_form.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['verbose_name'] = self.model._meta.verbose_name
+        return context
 
-# Importando os serviços
-from .services import AgendamentoService, ProntuarioService
+class BaseUpdateView(LoginRequiredMixin, UpdateView):
+    template_name = 'core/generic_form.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['verbose_name'] = self.object._meta.verbose_name
+        return context
 
-# A "injeção" acontece aqui, instanciando o serviço para ser usado na view.
-# Em projetos maiores, um container de injeção de dependência poderia ser usado.
-agendamento_service = AgendamentoService()
-prontuario_service = ProntuarioService()
+class BaseDeleteView(LoginRequiredMixin, DeleteView):
+    template_name = 'core/generic_confirm_delete.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['verbose_name'] = self.object._meta.verbose_name
+        context['cancel_url'] = self.request.META.get('HTTP_REFERER', self.success_url)
+        return context
 
-@require_http_methods(["POST"])
-def criar_consulta(request: HttpRequest) -> JsonResponse:
-    try:
-        data = json.loads(request.body)
-        paciente_id = data['paciente_id']
-        medico_id = data['medico_id']
-        data_hora_str = data['data_hora'] # Formato esperado: "2024-12-25 14:30"
-        data_hora = datetime.strptime(data_hora_str, '%Y-%m-%d %H:%M')
+def create_crud_views(model_class, form_class, list_template=None):
+    model_name_lower = model_class._meta.model_name
+    model_class_name = model_class.__name__
+    list_view = type(f'{model_class_name}ListView', (LoginRequiredMixin, ListView), {'model': model_class, 'template_name': list_template or f'core/{model_name_lower}_list.html'})
+    create_view = type(f'{model_class_name}CreateView', (BaseCreateView,), {'model': model_class, 'form_class': form_class, 'success_url': reverse_lazy(f'{model_name_lower}_list')})
+    update_view = type(f'{model_class_name}UpdateView', (BaseUpdateView,), {'model': model_class, 'form_class': form_class, 'success_url': reverse_lazy(f'{model_name_lower}_list')})
+    delete_view = type(f'{model_class_name}DeleteView', (BaseDeleteView,), {'model': model_class, 'success_url': reverse_lazy(f'{model_name_lower}_list')})
+    return list_view, create_view, update_view, delete_view
 
-        # A view DELEGA a lógica de negócio para o serviço
-        consulta = agendamento_service.agendar_consulta(paciente_id, medico_id, data_hora)
-        
-        return JsonResponse({'status': 'sucesso', 'consulta_id': consulta.id}, status=201)
-    except (ValueError, KeyError) as e:
-        return JsonResponse({'status': 'erro', 'mensagem': str(e)}, status=400)
+PacienteListView, PacienteCreateView, PacienteUpdateView, PacienteDeleteView = create_crud_views(Paciente, PacienteForm)
+MedicoListView, MedicoCreateView, MedicoUpdateView, MedicoDeleteView = create_crud_views(Medico, MedicoForm)
+ConsultaListView, ConsultaCreateView, ConsultaUpdateView, ConsultaDeleteView = create_crud_views(Consulta, ConsultaForm)
+EspecialidadeListView, EspecialidadeCreateView, EspecialidadeUpdateView, EspecialidadeDeleteView = create_crud_views(Especialidade, EspecialidadeForm)
+ConvenioListView, ConvenioCreateView, ConvenioUpdateView, ConvenioDeleteView = create_crud_views(Convenio, ConvenioForm)
+ExameListView, ExameCreateView, ExameUpdateView, ExameDeleteView = create_crud_views(Exame, ExameForm)
+MedicamentoListView, MedicamentoCreateView, MedicamentoUpdateView, MedicamentoDeleteView = create_crud_views(Medicamento, MedicamentoForm)
+PedidoExameListView, PedidoExameCreateView, PedidoExameUpdateView, PedidoExameDeleteView = create_crud_views(PedidoExame, PedidoExameForm)
+PrescricaoListView, PrescricaoCreateView, PrescricaoUpdateView, PrescricaoDeleteView = create_crud_views(Prescricao, PrescricaoForm)
 
-@require_http_methods(["POST"])
-def adicionar_registro_prontuario(request: HttpRequest) -> JsonResponse:
-    try:
-        data = json.loads(request.body)
-        paciente_id = data['paciente_id']
-        registro = data['registro']
+class PacienteDetailView(LoginRequiredMixin, DetailView):
+    model = Paciente
+    template_name = 'core/paciente_detail.html'
 
-        # A view DELEGA a lógica de negócio para o serviço
-        prontuario = prontuario_service.adicionar_registro(paciente_id, registro)
+class ProntuarioUpdateView(BaseUpdateView):
+    model = Prontuario
+    form_class = ProntuarioForm
+    template_name = 'core/prontuario_form.html'
+    def get_success_url(self):
+        return reverse_lazy('paciente_detail', kwargs={'pk': self.object.pk})
 
-        return JsonResponse({'status': 'sucesso', 'paciente_id': prontuario.paciente.id}, status=200)
-    except Exception as e:
-        return JsonResponse({'status': 'erro', 'mensagem': str(e)}, status=400)
-
+class SignUpView(CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login') # Redireciona para a página de login após o registo
+    template_name = 'registration/signup.html'

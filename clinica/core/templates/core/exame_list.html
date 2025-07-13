@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <div class="page-header">
+        <h1>Exames</h1>
+        <a href="{% url 'exame_create' %}" class="btn btn-primary">Adicionar Novo Exame</a>
+    </div>
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Custo (R$)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in object_list %}
+                <tr>
+                    <td>{{ object.nome }}</td>
+                    <td>{{ object.custo }}</td>
+                    <td class="actions">
+                        <a href="{% url 'exame_update' object.pk %}">Editar</a>
+                        <a href="{% url 'exame_delete' object.pk %}" style="color: var(--danger-color);">Apagar</a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="3">Nenhum exame registado.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

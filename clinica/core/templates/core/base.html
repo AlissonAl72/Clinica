@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde Plena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --danger-color: #dc3545;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --white-color: #ffffff;
+            --border-color: #dee2e6;
+            --font-family-sans-serif: 'Inter', sans-serif;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: var(--font-family-sans-serif);
+            margin: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* --- Navegação --- */
+        .navbar {
+            background-color: var(--white-color);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            box-shadow: var(--box-shadow);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .navbar-nav {
+            display: flex;
+            margin-left: 2rem;
+        }
+        .nav-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            padding: 0.5rem 0;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+        .nav-right {
+            margin-left: auto;
+        }
+
+        /* --- Botões --- */
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            font-weight: 500;
+            border-radius: 8px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+        .btn-danger {
+            background-color: var(--danger-color);
+            color: var(--white-color);
+        }
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+        }
+        
+        /* --- Cartões e Layout --- */
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .card {
+            background-color: var(--white-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            margin-top: 1rem;
+        }
+
+        /* --- Tabelas --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background-color: var(--light-color);
+            font-weight: 600;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .actions a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+        .actions a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Formulários --- */
+        form p {
+            margin-bottom: 1rem;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input[type="text"], input[type="date"], input[type="datetime-local"], input[type="password"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-sizing: border-box; /* Importante para o padding não aumentar o tamanho */
+        }
+        textarea {
+            min-height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}" class="navbar-brand">Clínica+</a>
+        <div class="navbar-nav">
+            <a href="{% url 'paciente_list' %}" class="nav-link">Pacientes</a>
+            <a href="{% url 'medico_list' %}" class="nav-link">Médicos</a>
+            <a href="{% url 'consulta_list' %}" class="nav-link">Consultas</a>
+            <a href="{% url 'especialidade_list' %}" class="nav-link">Especialidades</a>
+            <a href="{% url 'convenio_list' %}" class="nav-link">Convénios</a>
+            <a href="{% url 'exame_list' %}" class="nav-link">Exames</a>
+            <a href="{% url 'medicamento_list' %}" class="nav-link">Medicamentos</a>
+        </div>
+        <div class="nav-right">
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}" class="btn btn-danger">Sair</a>
+        {% else %}
+            <a href="{% url 'login' %}" class="btn btn-primary">Entrar</a>
+        {% endif %}
+        </div>
+    </nav>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

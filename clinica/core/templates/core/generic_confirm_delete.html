@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <h1>Apagar {{ verbose_name|capfirst }}</h1>
+    <p>Tem a certeza que deseja apagar "{{ object }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+        <a href="{{ cancel_url }}" style="margin-left: 1rem;">Cancelar</a>
+    </form>
+{% endblock %}

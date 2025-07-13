@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h1>{{ object.nome_completo }}</h1>
+    <p><strong>CPF:</strong> {{ object.cpf }}</p>
+    <p><strong>Data de Nascimento:</strong> {{ object.data_nascimento|date:"d/m/Y" }}</p>
+    <p><strong>Convênio:</strong> {{ object.convenio.nome|default:"Nenhum" }}</p>
+    <br>
+    <a href="{% url 'paciente_list' %}">Voltar para a lista</a>
+{% endblock %}
