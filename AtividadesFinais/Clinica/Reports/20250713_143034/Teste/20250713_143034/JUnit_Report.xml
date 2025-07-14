@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Teste" time="37.92" tests="5" failures="1" errors="0">
+   <testsuite name="Teste" tests="5" failures="1" errors="0" time="37.92" skipped="0" timestamp="2025-07-13T18:30:40.306Z" hostname="aliss - Alisson" id="Test Suites/Teste">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\aliss\\Katalon Studio\\Clinica\\Reports\\20250713_143034\\Teste\\20250713_143034"/>
+         <property name="logFiles" value="C:\\Users\\aliss\\Katalon Studio\\Clinica\\Reports\\20250713_143034\\Teste\\20250713_143034\\console0.log, C:\\Users\\aliss\\Katalon Studio\\Clinica\\Reports\\20250713_143034\\Teste\\20250713_143034\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\aliss\\Katalon Studio\\Clinica\\Reports\\20250713_143034\\Teste\\20250713_143034\\1752431465010.png"/>
+         <property name="hostName" value="aliss - Alisson"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.2.4.0"/>
+         <property name="browser" value="Chrome 138.0.7204.101"/>
+         <property name="userFullName" value="Alisson Almeida"/>
+         <property name="hostAddress" value="192.168.15.9"/>
+         <property name="sessionId" value="08dc00c28c6ac4139b1812ab0166ff6a"/>
+         <property name="projectName" value="Clinica"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Adicionar Paciente" time="10.111" classname="Test Cases/Adicionar Paciente" status="PASSED">
+         <system-out><![CDATA[13-07-2025T14:30:41 - [TEST_CASE][PASSED] - Test Cases/Adicionar Paciente: Test Cases/Adicionar Paciente
+
+13-07-2025T14:30:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2025T14:30:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+13-07-2025T14:30:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2025T14:30:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2025T14:30:44 - [TEST_STEP][PASSED] - navigateToUrl("http://127.0.0.1:8000/login/?next=/"): Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:30:45 - [MESSAGE][PASSED] - Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:30:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username"), "Alisson"): Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username'
+
+13-07-2025T14:30:45 - [MESSAGE][PASSED] - Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username'
+
+13-07-2025T14:30:45 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password"), "iEJD8MEks6psGiKDp3aEow=="): Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password'
+
+13-07-2025T14:30:46 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password'
+
+13-07-2025T14:30:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar' is clicked on
+
+13-07-2025T14:30:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar' is clicked on
+
+13-07-2025T14:30:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Pacientes")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Pacientes' is clicked on
+
+13-07-2025T14:30:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Pacientes' is clicked on
+
+13-07-2025T14:30:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Adicionar Novo Paciente")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Adicionar Novo Paciente' is clicked on
+
+13-07-2025T14:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Adicionar Novo Paciente' is clicked on
+
+13-07-2025T14:30:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo"), "Luzia de Souza"): Text 'Luzia de Souza' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo'
+
+13-07-2025T14:30:49 - [MESSAGE][PASSED] - Text 'Luzia de Souza' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo'
+
+13-07-2025T14:30:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Cpf_cpf"), "587.458.666.21"): Text '587.458.666.21' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Cpf_cpf'
+
+13-07-2025T14:30:49 - [MESSAGE][PASSED] - Text '587.458.666.21' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Cpf_cpf'
+
+13-07-2025T14:30:49 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed'  using regular expression
+
+13-07-2025T14:30:50 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed'  using regular expression
+
+13-07-2025T14:30:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Salvar")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Salvar' is clicked on
+
+13-07-2025T14:30:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Salvar' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Adição de medicos" time="8.123" classname="Test Cases/Adição de medicos" status="PASSED">
+         <system-out><![CDATA[13-07-2025T14:30:51 - [TEST_CASE][PASSED] - Test Cases/Adição de medicos: Test Cases/Adição de medicos
+
+13-07-2025T14:30:51 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2025T14:30:51 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+13-07-2025T14:30:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+13-07-2025T14:30:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2025T14:30:52 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2025T14:30:52 - [TEST_STEP][PASSED] - navigateToUrl("http://127.0.0.1:8000/login/?next=/"): Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:30:52 - [MESSAGE][PASSED] - Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:30:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Usurio_username (1)"), "Alisson"): Text 'Alisson' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Usurio_username (1)'
+
+13-07-2025T14:30:53 - [MESSAGE][PASSED] - Text 'Alisson' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Usurio_username (1)'
+
+13-07-2025T14:30:53 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Senha_password (1)"), "iEJD8MEks6psGiKDp3aEow=="): Text ****** has been set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Senha_password (1)'
+
+13-07-2025T14:30:53 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Senha_password (1)'
+
+13-07-2025T14:30:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/button_Entrar (1)")): Object: 'Object Repository/Testes/Page_Clnica Sade Plena/button_Entrar (1)' is clicked on
+
+13-07-2025T14:30:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Testes/Page_Clnica Sade Plena/button_Entrar (1)' is clicked on
+
+13-07-2025T14:30:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/a_Mdicos")): Object: 'Object Repository/Testes/Page_Clnica Sade Plena/a_Mdicos' is clicked on
+
+13-07-2025T14:30:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Testes/Page_Clnica Sade Plena/a_Mdicos' is clicked on
+
+13-07-2025T14:30:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/a_Adicionar Novo Mdico")): Object: 'Object Repository/Testes/Page_Clnica Sade Plena/a_Adicionar Novo Mdico' is clicked on
+
+13-07-2025T14:30:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Testes/Page_Clnica Sade Plena/a_Adicionar Novo Mdico' is clicked on
+
+13-07-2025T14:30:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)"), "Marcos Silva"): Text 'Marcos Silva' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)'
+
+13-07-2025T14:30:56 - [MESSAGE][PASSED] - Text 'Marcos Silva' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)'
+
+13-07-2025T14:30:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Crm_crm"), "548875"): Text '548875' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Crm_crm'
+
+13-07-2025T14:30:57 - [MESSAGE][PASSED] - Text '548875' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Crm_crm'
+
+13-07-2025T14:30:57 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/select_---------  Neurocirurgio  Medico Geral"), "1", true): All options with value '1' are selected in object 'Object Repository/Testes/Page_Clnica Sade Plena/select_---------  Neurocirurgio  Medico Geral'  using regular expression
+
+13-07-2025T14:30:58 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Testes/Page_Clnica Sade Plena/select_---------  Neurocirurgio  Medico Geral'  using regular expression
+
+13-07-2025T14:30:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Telefone_telefone"), "(66)98521-8554"): Text '(66)98521-8554' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Telefone_telefone'
+
+13-07-2025T14:30:58 - [MESSAGE][PASSED] - Text '(66)98521-8554' is set on object 'Object Repository/Testes/Page_Clnica Sade Plena/input_Telefone_telefone'
+
+13-07-2025T14:30:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/button_Salvar (1)")): Object: 'Object Repository/Testes/Page_Clnica Sade Plena/button_Salvar (1)' is clicked on
+
+13-07-2025T14:30:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Testes/Page_Clnica Sade Plena/button_Salvar (1)' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Adição de Consultas" time="5.821" classname="Test Cases/Adição de Consultas" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Adição de Consultas FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)&#xa;	at Adição de Consultas.run(Adição de Consultas:34)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)&#xa;	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)&#xa;	... 20 more&#xa;"/>
+         <system-out><![CDATA[13-07-2025T14:30:59 - [TEST_CASE][FAILED] - Test Cases/Adição de Consultas: Test Cases/Adição de Consultas FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Adição de Consultas.run(Adição de Consultas:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)
+	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more
+
+
+13-07-2025T14:30:59 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2025T14:30:59 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+13-07-2025T14:30:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+13-07-2025T14:30:59 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2025T14:31:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2025T14:31:00 - [TEST_STEP][PASSED] - navigateToUrl("http://127.0.0.1:8000/login/?next=/"): Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:31:00 - [MESSAGE][PASSED] - Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:31:00 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username (2)"), "Alisson"): Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username (2)'
+
+13-07-2025T14:31:01 - [MESSAGE][PASSED] - Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username (2)'
+
+13-07-2025T14:31:01 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password (2)"), "iEJD8MEks6psGiKDp3aEow=="): Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password (2)'
+
+13-07-2025T14:31:01 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password (2)'
+
+13-07-2025T14:31:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar (2)")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar (2)' is clicked on
+
+13-07-2025T14:31:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar (2)' is clicked on
+
+13-07-2025T14:31:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Consultas (1)")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Consultas (1)' is clicked on
+
+13-07-2025T14:31:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Consultas (1)' is clicked on
+
+13-07-2025T14:31:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Agendar Nova Consulta (1)")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Agendar Nova Consulta (1)' is clicked on
+
+13-07-2025T14:31:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Agendar Nova Consulta (1)' is clicked on
+
+13-07-2025T14:31:04 - [TEST_STEP][FAILED] - selectOptionByValue(findTestObject("Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d"), "6", true): Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Adição de Consultas.run(Adição de Consultas:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)
+	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Script1752430576620.run(Script1752430576620.groovy:34)
+	... 15 more
+)
+
+13-07-2025T14:31:05 - [MESSAGE][FAILED] - No option matched.
+
+13-07-2025T14:31:05 - [MESSAGE][FAILED] - Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Adição de Consultas.run(Adição de Consultas:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)
+	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Script1752430576620.run(Script1752430576620.groovy:34)
+	... 15 more
+)
+[[ATTACHMENT|C:\\Users\\aliss\\Katalon Studio\\Clinica\\Reports\\20250713_143034\\Teste\\20250713_143034\\1752431465010.png]]]]></system-out>
+         <system-err><![CDATA[13-07-2025T14:30:59 - [TEST_CASE][FAILED] - Test Cases/Adição de Consultas: Test Cases/Adição de Consultas FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Adição de Consultas.run(Adição de Consultas:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)
+	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Edição de Paciente" time="7.147" classname="Test Cases/Edição de Paciente" status="PASSED">
+         <system-out><![CDATA[13-07-2025T14:31:05 - [TEST_CASE][PASSED] - Test Cases/Edição de Paciente: Test Cases/Edição de Paciente
+
+13-07-2025T14:31:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2025T14:31:05 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+13-07-2025T14:31:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+13-07-2025T14:31:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2025T14:31:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2025T14:31:06 - [TEST_STEP][PASSED] - navigateToUrl("http://127.0.0.1:8000/login/?next=/"): Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:31:06 - [MESSAGE][PASSED] - Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:31:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username (3)"), "Alisson"): Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username (3)'
+
+13-07-2025T14:31:07 - [MESSAGE][PASSED] - Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username (3)'
+
+13-07-2025T14:31:07 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password (3)"), "iEJD8MEks6psGiKDp3aEow=="): Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password (3)'
+
+13-07-2025T14:31:07 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password (3)'
+
+13-07-2025T14:31:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar (3)")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar (3)' is clicked on
+
+13-07-2025T14:31:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar (3)' is clicked on
+
+13-07-2025T14:31:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Pacientes (1)")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Pacientes (1)' is clicked on
+
+13-07-2025T14:31:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Pacientes (1)' is clicked on
+
+13-07-2025T14:31:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Editar")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Editar' is clicked on
+
+13-07-2025T14:31:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Editar' is clicked on
+
+13-07-2025T14:31:10 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)"), "Alisson Silva"): Text 'Alisson Silva' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)'
+
+13-07-2025T14:31:11 - [MESSAGE][PASSED] - Text 'Alisson Silva' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)'
+
+13-07-2025T14:31:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed (1)"), "2", true): All options with value '2' are selected in object 'Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed (1)'  using regular expression
+
+13-07-2025T14:31:11 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed (1)'  using regular expression
+
+13-07-2025T14:31:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Salvar (3)")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Salvar (3)' is clicked on
+
+13-07-2025T14:31:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Salvar (3)' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Exclusão de Pacientes" time="5.945" classname="Test Cases/Exclusão de Pacientes" status="PASSED">
+         <system-out><![CDATA[13-07-2025T14:31:12 - [TEST_CASE][PASSED] - Test Cases/Exclusão de Pacientes: Test Cases/Exclusão de Pacientes
+
+13-07-2025T14:31:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2025T14:31:12 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+13-07-2025T14:31:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+13-07-2025T14:31:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2025T14:31:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2025T14:31:14 - [TEST_STEP][PASSED] - navigateToUrl("http://127.0.0.1:8000/login/?next=/"): Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:31:14 - [MESSAGE][PASSED] - Navigate to 'http://127.0.0.1:8000/login/?next=/' successfully
+
+13-07-2025T14:31:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username (4)"), "Alisson"): Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username (4)'
+
+13-07-2025T14:31:15 - [MESSAGE][PASSED] - Text 'Alisson' is set on object 'Object Repository/Page_Clnica Sade Plena/input_Usurio_username (4)'
+
+13-07-2025T14:31:15 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password (4)"), "iEJD8MEks6psGiKDp3aEow=="): Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password (4)'
+
+13-07-2025T14:31:15 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Clnica Sade Plena/input_Senha_password (4)'
+
+13-07-2025T14:31:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar (4)")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar (4)' is clicked on
+
+13-07-2025T14:31:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Entrar (4)' is clicked on
+
+13-07-2025T14:31:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Pacientes (2)")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Pacientes (2)' is clicked on
+
+13-07-2025T14:31:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Pacientes (2)' is clicked on
+
+13-07-2025T14:31:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Apagar")): Object: 'Object Repository/Page_Clnica Sade Plena/a_Apagar' is clicked on
+
+13-07-2025T14:31:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/a_Apagar' is clicked on
+
+13-07-2025T14:31:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Confirmar Excluso")): Object: 'Object Repository/Page_Clnica Sade Plena/button_Confirmar Excluso' is clicked on
+
+13-07-2025T14:31:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Clnica Sade Plena/button_Confirmar Excluso' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-07-2025T14:30:40 - [TEST_SUITE][FAILED] - Teste: null]]></system-out>
+      <system-err><![CDATA[13-07-2025T14:30:40 - [TEST_SUITE][FAILED] - Teste: null]]></system-err>
+   </testsuite>
+</testsuites>
