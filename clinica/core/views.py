@@ -13,8 +13,7 @@ class HomeView(LoginRequiredMixin, ListView):
     context_object_name = 'consultas'
     ordering = ['-data_hora']
 
-# CORREÇÃO: As views base agora adicionam o 'verbose_name' ao contexto
-# para que possa ser usado de forma segura nos templates.
+
 class BaseCreateView(LoginRequiredMixin, CreateView):
     template_name = 'core/generic_form.html'
     def get_context_data(self, **kwargs):

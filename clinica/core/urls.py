@@ -17,7 +17,6 @@ def create_crud_urls(model_class):
     ]
 
 urlpatterns = [
-    # A URL de signup foi ADICIONADA AQUI.
     path('signup/', views.SignUpView.as_view(), name='signup'),
 
     path('', views.HomeView.as_view(), name='home'),
