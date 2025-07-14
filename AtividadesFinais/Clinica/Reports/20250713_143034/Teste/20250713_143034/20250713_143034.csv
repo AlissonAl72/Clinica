@@ -1,0 +1,61 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Teste,Chrome 138.0.7204.101,,,13-07-2025 14:30:40,13-07-2025 14:31:18,"38,163s",FAILED
+,,,,,,,
+Test Cases/Adicionar Paciente,Chrome 138.0.7204.101,Adição de paciente,,13-07-2025 14:30:41,13-07-2025 14:30:51,"10,111s",PASSED
+"openBrowser("""")",Chrome 138.0.7204.101,,,13-07-2025 14:30:41,13-07-2025 14:30:44,"3,119s",PASSED
+"navigateToUrl(""http://127.0.0.1:8000/login/?next=/"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:44,13-07-2025 14:30:45,"0,449s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Usurio_username""), ""Alisson"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:45,13-07-2025 14:30:45,"0,768s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Senha_password""), ""iEJD8MEks6psGiKDp3aEow=="")",Chrome 138.0.7204.101,,,13-07-2025 14:30:45,13-07-2025 14:30:46,"0,383s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Entrar""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:46,13-07-2025 14:30:47,"0,908s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Pacientes""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:47,13-07-2025 14:30:47,"0,575s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Adicionar Novo Paciente""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:47,13-07-2025 14:30:48,"0,590s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo""), ""Luzia de Souza"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:48,13-07-2025 14:30:49,"0,833s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Cpf_cpf""), ""587.458.666.21"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:49,13-07-2025 14:30:49,"0,630s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed""), ""1"", true)",Chrome 138.0.7204.101,,,13-07-2025 14:30:49,13-07-2025 14:30:50,"0,974s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Salvar""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:50,13-07-2025 14:30:51,"0,329s",PASSED
+,,,,,,,
+Test Cases/Adição de medicos,Chrome 138.0.7204.101,,,13-07-2025 14:30:51,13-07-2025 14:30:59,"8,123s",PASSED
+"openBrowser("""")",Chrome 138.0.7204.101,,,13-07-2025 14:30:51,13-07-2025 14:30:52,"1,283s",PASSED
+"navigateToUrl(""http://127.0.0.1:8000/login/?next=/"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:52,13-07-2025 14:30:52,"0,058s",PASSED
+"setText(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/input_Usurio_username (1)""), ""Alisson"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:52,13-07-2025 14:30:53,"0,958s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/input_Senha_password (1)""), ""iEJD8MEks6psGiKDp3aEow=="")",Chrome 138.0.7204.101,,,13-07-2025 14:30:53,13-07-2025 14:30:53,"0,340s",PASSED
+"click(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/button_Entrar (1)""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:53,13-07-2025 14:30:54,"1,000s",PASSED
+"click(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/a_Mdicos""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:54,13-07-2025 14:30:55,"0,507s",PASSED
+"click(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/a_Adicionar Novo Mdico""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:55,13-07-2025 14:30:56,"0,608s",PASSED
+"setText(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)""), ""Marcos Silva"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:56,13-07-2025 14:30:56,"0,862s",PASSED
+"setText(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/input_Crm_crm""), ""548875"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:56,13-07-2025 14:30:57,"0,590s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/select_---------  Neurocirurgio  Medico Geral""), ""1"", true)",Chrome 138.0.7204.101,,,13-07-2025 14:30:57,13-07-2025 14:30:58,"0,852s",PASSED
+"setText(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/input_Telefone_telefone""), ""(66)98521-8554"")",Chrome 138.0.7204.101,,,13-07-2025 14:30:58,13-07-2025 14:30:58,"0,577s",PASSED
+"click(findTestObject(""Object Repository/Testes/Page_Clnica Sade Plena/button_Salvar (1)""))",Chrome 138.0.7204.101,,,13-07-2025 14:30:58,13-07-2025 14:30:59,"0,338s",PASSED
+,,,,,,,
+Test Cases/Adição de Consultas,Chrome 138.0.7204.101,,,13-07-2025 14:30:59,13-07-2025 14:31:05,"5,821s",FAILED
+"openBrowser("""")",Chrome 138.0.7204.101,,,13-07-2025 14:30:59,13-07-2025 14:31:00,"1,181s",PASSED
+"navigateToUrl(""http://127.0.0.1:8000/login/?next=/"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:00,13-07-2025 14:31:00,"0,062s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Usurio_username (2)""), ""Alisson"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:00,13-07-2025 14:31:01,"0,936s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Senha_password (2)""), ""iEJD8MEks6psGiKDp3aEow=="")",Chrome 138.0.7204.101,,,13-07-2025 14:31:01,13-07-2025 14:31:01,"0,348s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Entrar (2)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:01,13-07-2025 14:31:02,"1,058s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Consultas (1)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:02,13-07-2025 14:31:03,"0,643s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Agendar Nova Consulta (1)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:03,13-07-2025 14:31:04,"0,570s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d""), ""6"", true)",Chrome 138.0.7204.101,,,13-07-2025 14:31:04,13-07-2025 14:31:05,"0,908s",FAILED
+,,,,,,,
+Test Cases/Edição de Paciente,Chrome 138.0.7204.101,,,13-07-2025 14:31:05,13-07-2025 14:31:12,"7,147s",PASSED
+"openBrowser("""")",Chrome 138.0.7204.101,,,13-07-2025 14:31:05,13-07-2025 14:31:06,"1,246s",PASSED
+"navigateToUrl(""http://127.0.0.1:8000/login/?next=/"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:06,13-07-2025 14:31:06,"0,309s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Usurio_username (3)""), ""Alisson"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:06,13-07-2025 14:31:07,"0,667s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Senha_password (3)""), ""iEJD8MEks6psGiKDp3aEow=="")",Chrome 138.0.7204.101,,,13-07-2025 14:31:07,13-07-2025 14:31:07,"0,357s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Entrar (3)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:07,13-07-2025 14:31:08,"1,184s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Pacientes (1)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:08,13-07-2025 14:31:09,"0,569s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Editar""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:09,13-07-2025 14:31:10,"0,670s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)""), ""Alisson Silva"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:10,13-07-2025 14:31:11,"0,862s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed (1)""), ""2"", true)",Chrome 138.0.7204.101,,,13-07-2025 14:31:11,13-07-2025 14:31:11,"0,854s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Salvar (3)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:11,13-07-2025 14:31:12,"0,339s",PASSED
+,,,,,,,
+Test Cases/Exclusão de Pacientes,Chrome 138.0.7204.101,,,13-07-2025 14:31:12,13-07-2025 14:31:18,"5,945s",PASSED
+"openBrowser("""")",Chrome 138.0.7204.101,,,13-07-2025 14:31:12,13-07-2025 14:31:14,"1,675s",PASSED
+"navigateToUrl(""http://127.0.0.1:8000/login/?next=/"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:14,13-07-2025 14:31:14,"0,060s",PASSED
+"setText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Usurio_username (4)""), ""Alisson"")",Chrome 138.0.7204.101,,,13-07-2025 14:31:14,13-07-2025 14:31:15,"0,984s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Clnica Sade Plena/input_Senha_password (4)""), ""iEJD8MEks6psGiKDp3aEow=="")",Chrome 138.0.7204.101,,,13-07-2025 14:31:15,13-07-2025 14:31:15,"0,339s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Entrar (4)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:15,13-07-2025 14:31:16,"1,151s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Pacientes (2)""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:16,13-07-2025 14:31:17,"0,484s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/a_Apagar""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:17,13-07-2025 14:31:17,"0,569s",PASSED
+"click(findTestObject(""Object Repository/Page_Clnica Sade Plena/button_Confirmar Excluso""))",Chrome 138.0.7204.101,,,13-07-2025 14:31:17,13-07-2025 14:31:18,"0,563s",PASSED

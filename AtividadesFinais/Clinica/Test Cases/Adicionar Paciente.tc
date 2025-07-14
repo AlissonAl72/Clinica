@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Adição de paciente</description>
+   <name>Adicionar Paciente</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af65af02-b274-4978-b5ee-d6b672a84bf8</testCaseGuid>
+</TestCaseEntity>

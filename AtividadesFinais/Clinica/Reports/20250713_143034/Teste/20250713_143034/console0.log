@@ -1,0 +1,197 @@
+Warning: NLS unused message: QTEST in: com.kms.katalon.constants.globalMessages
+Warning: NLS missing message: QTEST_NAME in: com.kms.katalon.constants.globalMessages
+2025-07-13 14:30:40.227 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Teste
+2025-07-13 14:30:40.334 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Alisson Almeida
+2025-07-13 14:30:40.336 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Clinica
+2025-07-13 14:30:40.337 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = aliss - Alisson
+2025-07-13 14:30:40.339 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2025-07-13 14:30:40.340 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.15.9
+2025-07-13 14:30:40.341 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.2.4.0
+2025-07-13 14:30:41.041 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-07-13 14:30:41.041 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Adicionar Paciente
+2025-07-13 14:30:41.574 DEBUG testcase.Adicionar Paciente              - 1: openBrowser("")
+2025-07-13 14:30:41.868 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-07-13 14:30:41.960 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+jul. 13, 2025 2:30:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 138, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 138
+2025-07-13 14:30:44.642 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 3db36852213245b12c2b6ce4eb717145
+2025-07-13 14:30:44.644 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 138.0.7204.101
+2025-07-13 14:30:44.644 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2025-07-13 14:30:44.646 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-07-13 14:30:44.654 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-07-13 14:30:44.694 DEBUG testcase.Adicionar Paciente              - 2: navigateToUrl("http://127.0.0.1:8000/login/?next=/")
+2025-07-13 14:30:45.148 DEBUG testcase.Adicionar Paciente              - 3: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username"), "Alisson")
+2025-07-13 14:30:45.916 DEBUG testcase.Adicionar Paciente              - 4: setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password"), "iEJD8MEks6psGiKDp3aEow==")
+2025-07-13 14:30:46.301 DEBUG testcase.Adicionar Paciente              - 5: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar"))
+2025-07-13 14:30:47.210 DEBUG testcase.Adicionar Paciente              - 6: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Pacientes"))
+2025-07-13 14:30:47.786 DEBUG testcase.Adicionar Paciente              - 7: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Adicionar Novo Paciente"))
+2025-07-13 14:30:48.381 DEBUG testcase.Adicionar Paciente              - 8: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo"), "Luzia de Souza")
+2025-07-13 14:30:49.214 DEBUG testcase.Adicionar Paciente              - 9: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Cpf_cpf"), "587.458.666.21")
+2025-07-13 14:30:49.844 DEBUG testcase.Adicionar Paciente              - 10: selectOptionByValue(findTestObject("Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed"), "1", true)
+2025-07-13 14:30:50.818 DEBUG testcase.Adicionar Paciente              - 11: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Salvar"))
+2025-07-13 14:30:51.151 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Adicionar Paciente
+2025-07-13 14:30:51.164 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-07-13 14:30:51.164 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Adição de medicos
+2025-07-13 14:30:51.302 DEBUG testcase.Adição de medicos               - 1: openBrowser("")
+2025-07-13 14:30:51.307 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-07-13 14:30:51.560 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-07-13 14:30:51.563 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+jul. 13, 2025 2:30:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 138, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 138
+2025-07-13 14:30:52.556 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = ba8e239ef25ca3fb60918f93a9b5a64f
+2025-07-13 14:30:52.557 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 138.0.7204.101
+2025-07-13 14:30:52.557 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2025-07-13 14:30:52.557 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-07-13 14:30:52.559 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-07-13 14:30:52.585 DEBUG testcase.Adição de medicos               - 2: navigateToUrl("http://127.0.0.1:8000/login/?next=/")
+2025-07-13 14:30:52.644 DEBUG testcase.Adição de medicos               - 3: setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Usurio_username (1)"), "Alisson")
+2025-07-13 14:30:53.603 DEBUG testcase.Adição de medicos               - 4: setEncryptedText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Senha_password (1)"), "iEJD8MEks6psGiKDp3aEow==")
+2025-07-13 14:30:53.943 DEBUG testcase.Adição de medicos               - 5: click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/button_Entrar (1)"))
+2025-07-13 14:30:54.943 DEBUG testcase.Adição de medicos               - 6: click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/a_Mdicos"))
+2025-07-13 14:30:55.453 DEBUG testcase.Adição de medicos               - 7: click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/a_Adicionar Novo Mdico"))
+2025-07-13 14:30:56.062 DEBUG testcase.Adição de medicos               - 8: setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)"), "Marcos Silva")
+2025-07-13 14:30:56.925 DEBUG testcase.Adição de medicos               - 9: setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Crm_crm"), "548875")
+2025-07-13 14:30:57.514 DEBUG testcase.Adição de medicos               - 10: selectOptionByValue(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/select_---------  Neurocirurgio  Medico Geral"), "1", true)
+2025-07-13 14:30:58.368 DEBUG testcase.Adição de medicos               - 11: setText(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/input_Telefone_telefone"), "(66)98521-8554")
+2025-07-13 14:30:58.946 DEBUG testcase.Adição de medicos               - 12: click(findTestObject("Object Repository/Testes/Page_Clnica Sade Plena/button_Salvar (1)"))
+2025-07-13 14:30:59.287 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Adição de medicos
+2025-07-13 14:30:59.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-07-13 14:30:59.297 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Adição de Consultas
+2025-07-13 14:30:59.404 DEBUG testcase.Adição de Consultas             - 1: openBrowser("")
+2025-07-13 14:30:59.407 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-07-13 14:30:59.634 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-07-13 14:30:59.636 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+jul. 13, 2025 2:31:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 138, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 138
+2025-07-13 14:31:00.555 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = e9052597628fdcbd0319ea70c468e12d
+2025-07-13 14:31:00.555 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 138.0.7204.101
+2025-07-13 14:31:00.556 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2025-07-13 14:31:00.557 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-07-13 14:31:00.558 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-07-13 14:31:00.584 DEBUG testcase.Adição de Consultas             - 2: navigateToUrl("http://127.0.0.1:8000/login/?next=/")
+2025-07-13 14:31:00.647 DEBUG testcase.Adição de Consultas             - 3: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username (2)"), "Alisson")
+2025-07-13 14:31:01.584 DEBUG testcase.Adição de Consultas             - 4: setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password (2)"), "iEJD8MEks6psGiKDp3aEow==")
+2025-07-13 14:31:01.932 DEBUG testcase.Adição de Consultas             - 5: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar (2)"))
+2025-07-13 14:31:02.989 DEBUG testcase.Adição de Consultas             - 6: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Consultas (1)"))
+2025-07-13 14:31:03.634 DEBUG testcase.Adição de Consultas             - 7: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Agendar Nova Consulta (1)"))
+2025-07-13 14:31:04.205 DEBUG testcase.Adição de Consultas             - 8: selectOptionByValue(findTestObject("Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d"), "6", true)
+2025-07-13 14:31:05.007 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ No option matched.
+2025-07-13 14:31:05.114 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Adição de Consultas.run(Adição de Consultas:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)
+	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Script1752430576620.run(Script1752430576620.groovy:34)
+	... 15 more
+)
+2025-07-13 14:31:05.116 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Adição de Consultas FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by value '6' of object 'Object Repository/Page_Clnica Sade Plena/select_---------  Alisson Almeida  Julio Ce_3f138d'  using regular expression
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:118)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.selectOptionByValue(SelectOptionByValueKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword.execute(SelectOptionByValueKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:64)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue(WebUiBuiltInKeywords.groovy:1244)
+	at Adição de Consultas.run(Adição de Consultas:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:485)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:476)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:455)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:447)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:195)
+	at TempTestSuite1752431434961.run(TempTestSuite1752431434961.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: No option matched.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.doCall(SelectOptionByValueKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByValueKeyword$_selectOptionByValue_closure1.call(SelectOptionByValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more
+
+2025-07-13 14:31:05.119 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Adição de Consultas
+2025-07-13 14:31:05.125 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-07-13 14:31:05.125 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Edição de Paciente
+2025-07-13 14:31:05.205 DEBUG testcase.Edição de Paciente              - 1: openBrowser("")
+2025-07-13 14:31:05.210 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-07-13 14:31:05.452 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-07-13 14:31:05.454 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+jul. 13, 2025 2:31:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 138, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 138
+2025-07-13 14:31:06.425 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = f7fd5607ac642d9898d358c8e571ba81
+2025-07-13 14:31:06.426 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 138.0.7204.101
+2025-07-13 14:31:06.426 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2025-07-13 14:31:06.427 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-07-13 14:31:06.427 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-07-13 14:31:06.451 DEBUG testcase.Edição de Paciente              - 2: navigateToUrl("http://127.0.0.1:8000/login/?next=/")
+2025-07-13 14:31:06.761 DEBUG testcase.Edição de Paciente              - 3: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username (3)"), "Alisson")
+2025-07-13 14:31:07.428 DEBUG testcase.Edição de Paciente              - 4: setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password (3)"), "iEJD8MEks6psGiKDp3aEow==")
+2025-07-13 14:31:07.785 DEBUG testcase.Edição de Paciente              - 5: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar (3)"))
+2025-07-13 14:31:08.973 DEBUG testcase.Edição de Paciente              - 6: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Pacientes (1)"))
+2025-07-13 14:31:09.543 DEBUG testcase.Edição de Paciente              - 7: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Editar"))
+2025-07-13 14:31:10.213 DEBUG testcase.Edição de Paciente              - 8: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Nome completo_nome_completo (1)"), "Alisson Silva")
+2025-07-13 14:31:11.076 DEBUG testcase.Edição de Paciente              - 9: selectOptionByValue(findTestObject("Object Repository/Page_Clnica Sade Plena/select_---------  SUS  Unimed (1)"), "2", true)
+2025-07-13 14:31:11.931 DEBUG testcase.Edição de Paciente              - 10: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Salvar (3)"))
+2025-07-13 14:31:12.272 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Edição de Paciente
+2025-07-13 14:31:12.281 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-07-13 14:31:12.281 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Exclusão de Pacientes
+2025-07-13 14:31:12.400 DEBUG testcase.Exclusão de Pacientes           - 1: openBrowser("")
+2025-07-13 14:31:12.406 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-07-13 14:31:12.746 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-07-13 14:31:12.748 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+jul. 13, 2025 2:31:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 138, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 138
+2025-07-13 14:31:14.049 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 08dc00c28c6ac4139b1812ab0166ff6a
+2025-07-13 14:31:14.050 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 138.0.7204.101
+2025-07-13 14:31:14.051 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2025-07-13 14:31:14.052 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-07-13 14:31:14.054 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-07-13 14:31:14.074 DEBUG testcase.Exclusão de Pacientes           - 2: navigateToUrl("http://127.0.0.1:8000/login/?next=/")
+2025-07-13 14:31:14.134 DEBUG testcase.Exclusão de Pacientes           - 3: setText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Usurio_username (4)"), "Alisson")
+2025-07-13 14:31:15.119 DEBUG testcase.Exclusão de Pacientes           - 4: setEncryptedText(findTestObject("Object Repository/Page_Clnica Sade Plena/input_Senha_password (4)"), "iEJD8MEks6psGiKDp3aEow==")
+2025-07-13 14:31:15.458 DEBUG testcase.Exclusão de Pacientes           - 5: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Entrar (4)"))
+2025-07-13 14:31:16.609 DEBUG testcase.Exclusão de Pacientes           - 6: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Pacientes (2)"))
+2025-07-13 14:31:17.092 DEBUG testcase.Exclusão de Pacientes           - 7: click(findTestObject("Object Repository/Page_Clnica Sade Plena/a_Apagar"))
+2025-07-13 14:31:17.661 DEBUG testcase.Exclusão de Pacientes           - 8: click(findTestObject("Object Repository/Page_Clnica Sade Plena/button_Confirmar Excluso"))
+2025-07-13 14:31:18.226 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Exclusão de Pacientes
+2025-07-13 14:31:18.469 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-07-13 14:31:18.469 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Teste
+2025-07-13 14:31:18.469 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
